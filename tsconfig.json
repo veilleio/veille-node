@@ -18,7 +18,7 @@
     "noEmit": true,
     "types": ["node"],
     "paths": {
-      "@veille/sdk": ["./src/index.ts"]
+      "@veilleio/sdk": ["./src/index.ts"]
     }
   },
   "include": ["src/**/*.ts", "test/**/*.ts", "examples/**/*.ts"]

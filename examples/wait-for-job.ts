@@ -1,4 +1,4 @@
-import { VeilleClient } from "@veille/sdk";
+import { VeilleClient } from "@veilleio/sdk";
 
 const client = new VeilleClient({ apiKey: process.env.VEILLE_API_KEY });
 

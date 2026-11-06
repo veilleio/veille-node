@@ -13,7 +13,7 @@ The SDK exposes **11 typed methods**, one per documented endpoint, plus a generi
 ## Installation
 
 ```sh
-npm install @veille/sdk
+npm install @veilleio/sdk
 ```
 
 The SDK works with TypeScript and JavaScript (ES modules). The examples below use TypeScript; JavaScript users can use the same API by omitting TypeScript-only syntax.
@@ -25,7 +25,7 @@ The SDK works with TypeScript and JavaScript (ES modules). The examples below us
 ## Quick start
 
 ```ts
-import { VeilleClient } from "@veille/sdk";
+import { VeilleClient } from "@veilleio/sdk";
 
 const client = new VeilleClient({ apiKey: process.env.VEILLE_API_KEY });
 
@@ -76,7 +76,7 @@ Both keep the buffered `rawResponse` (status, headers, content type, body bytes)
 ## Errors
 
 ```ts
-import { VeilleApiError } from "@veille/sdk";
+import { VeilleApiError } from "@veilleio/sdk";
 
 try {
   await client.intelligenceEmail({ query: "jane.doe@example.com" });
@@ -158,7 +158,7 @@ await client.intelligenceEmail(
 ## Advanced: custom Fetch transport
 
 ```ts
-import { VeilleClient, type VeilleFetch } from "@veille/sdk";
+import { VeilleClient, type VeilleFetch } from "@veilleio/sdk";
 
 const loggingFetch: VeilleFetch = async (input, init) => {
   const response = await fetch(input, init);
